@@ -18,6 +18,10 @@
  * http://www.serialcominstruments.com/SerialComInstruments%20Doku.pdf
  * 
  * By Daniel Scheidler - Dezember 2019
+ *
+ *
+ *******************************************  zum Testen vom RGB LED 64x32 Panel. Programm in Examples ***********************************
+ *
  */
 
 const unsigned int Line_A = A0;                // globale Konstante für Pin mit roter LED
