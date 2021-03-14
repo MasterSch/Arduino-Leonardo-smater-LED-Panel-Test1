@@ -196,31 +196,51 @@ void schalte(int kanal, float wert){
 
      case 11:                                        // Wenn Kanal = 1 ist
        // Switch-Button
-       if (wert > 0){                               // Wenn Wert größer 0 ist
+       //if (wert > 0){                               // Wenn Wert größer 0 ist
          digitalWrite(CLOCK, HIGH);          // rote LED einschalten
-       } else {                                     // sonst
+       //} else {                                     // sonst
          digitalWrite(CLOCK, LOW);           // rote LED ausschalten
-       }
+       //}
        break;
 
      case 12:                                        // Wenn Kanal = 1 ist
        // Switch-Button
-       if (wert > 0){                               // Wenn Wert größer 0 ist
+       //if (wert > 0){                               // Wenn Wert größer 0 ist
          digitalWrite(LATCH, HIGH);          // rote LED einschalten
-       } else {                                     // sonst
+       //} else {                                     // sonst
          digitalWrite(LATCH, LOW);           // rote LED ausschalten
-       }
+       //}
        break;
 
      case 13:                                        // Wenn Kanal = 1 ist
        // Switch-Button
-       if (wert > 0){                               // Wenn Wert größer 0 ist
-         digitalWrite(OE, HIGH);          // rote LED einschalten
-       } else {                                     // sonst
+       //if (wert > 0){                               // Wenn Wert größer 0 ist
          digitalWrite(OE, LOW);           // rote LED ausschalten
-       }
+         digitalWrite(OE, HIGH);          // rote LED einschalten
+       //} else {                                     // sonst
+         digitalWrite(OE, LOW);           // rote LED ausschalten
+       //}
        break;        
 
+     case 14:                                        // Wenn Kanal = 1 ist
+       // Switch-Button
+        for(int i = 0; i < 8; i++) {         // Wenn Wert größer 0 ist
+         digitalWrite(CLOCK, HIGH);  
+         //kanal++;        // rote LED einschalten                                    // sonst
+         digitalWrite(CLOCK, LOW);           // rote LED ausschalten
+         //kanal++;
+         }
+       break;
+       
+     case 15:                                        // Wenn Kanal = 1 ist
+       // Switch-Button
+        for(int i = 0; i < 64; i++) {         // Wenn Wert größer 0 ist
+         digitalWrite(CLOCK, HIGH);  
+         //kanal++;        // rote LED einschalten                                    // sonst
+         digitalWrite(CLOCK, LOW);           // rote LED ausschalten
+         //kanal++;
+         }
+       break;
   }
 }
 
